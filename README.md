@@ -20,15 +20,16 @@ By summarizing, filtering, and visualizing telemetry data, I strengthened my app
 
 ## 📊 Hands-on Queries
 
-### 🔹 Create and Ingest Data
-```kql
-.create table DetectiveCases(
-    Timestamp:datetime,
-    EventType:string,
-    DetectiveId:string,
-    CaseId:string,
-    Properties:dynamic
-)
-.ingest async into table DetectiveCases ('https://kustodetectiveagency.blob.core.windows.net/kda2start/log_00000.csv.gz')
-.ingest async into table DetectiveCases ('https://kustodetectiveagency.blob.core.windows.net/kda2start/log_00001.csv.gz')
-.ingest into table DetectiveCases ('https://kustodetectiveagency.blob.core.windows.net/kda2start/log_00002.csv.gz')
+---
+
+## 🖼️ Screenshots
+
+**1️⃣ KQL Script Execution**
+![KQL Query Execution](https://github.com/Kirankumar2887138/kusto-detective-agency-lab/blob/main/01_kusto_script_execution.png)
+
+**2️⃣ Data Ingestion Completed**
+![Data Ingest Completed](https://github.com/Kirankumar2887138/kusto-detective-agency-lab/blob/main/02_kusto_data_ingest.png)
+
+**3️⃣ Event Summary Output**
+![Event Summary Output](https://github.com/Kirankumar2887138/kusto-detective-agency-lab/blob/main/03_kusto_summary_output.png)
+
